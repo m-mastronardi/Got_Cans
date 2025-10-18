@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Got Cans - Making a Difference, One Can at a Time</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #2d2d2d;
+            background: #fafafa;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff9ec8 0%, #ffb6d9 50%, #ffd4e8 100%);
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(255, 158, 200, 0.3);
+            border-bottom: 4px solid #ffb6d9;
+        }
+
+        .logo-container {
+            max-width: 350px;
+            margin: 0 auto 1rem;
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: auto;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            color: #d9006e;
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+            font-weight: bold;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #ff85c1;
+            font-weight: 600;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(255, 158, 200, 0.15);
+            border: 3px solid #ffe0f0;
+        }
+
+        h2 {
+            color: #ff69b4;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #ffb6d9;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .about-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #2d2d2d;
+        }
+
+        .service-highlight {
+            background: linear-gradient(135deg, #fff0f6 0%, #fffbea 100%);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin: 1.5rem 0;
+            border-left: 5px solid #ffb6d9;
+            border-right: 5px solid #ffd966;
+        }
+
+        .schedule-section {
+            background: linear-gradient(135deg, #ff9ec8 0%, #ffb6d9 50%, #ffd966 100%) !important;
+            color: white;
+            padding: 2.5rem !important;
+            border-radius: 20px !important;
+            text-align: center;
+            border: none !important;
+        }
+
+        .schedule-section h2 {
+            color: white !important;
+            border-bottom: 3px solid white !important;
+        }
+
+        .schedule-btn {
+            display: inline-block;
+            background: white;
+            color: #ff69b4;
+            padding: 1rem 2.5rem;
+            margin-top: 1rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .schedule-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            background: #fffbea;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.1rem;
+            padding: 1rem;
+            background: #fff5f8;
+            border-radius: 10px;
+            border-left: 4px solid #ffb6d9;
+            color: #2d2d2d;
+        }
+
+        .contact-item a {
+            color: #ff69b4;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .contact-item a:hover {
+            color: #ff1493;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, #ff69b4 0%, #ff85c1 100%);
+            color: white !important;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
+        }
+
+        .social-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 105, 180, 0.4);
+            background: linear-gradient(135deg, #ff1493 0%, #ff69b4 100%);
+        }
+
+        footer {
+            background: linear-gradient(135deg, #ff9ec8 0%, #ffb6d9 100%);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 3rem;
+            border-top: 4px solid #ffd966;
+            font-weight: 500;
+        }
+
+        .emoji {
+            font-size: 1.3em;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="assets/gotcans_logo.png" alt="Got Cans Logo" style="background: white; border-radius: 50%; padding: 10px;">
+        </div>
+        <!--<p class="tagline">Making a Difference, One Can at a Time ✨</p>-->
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>💕 About Us</h2>
+            <div class="about-content">
+                <p>Welcome to Got Cans! We’re two college-bound girls on a mission to turn your returnables into something meaningful! 
+                    If the dirty job of taking back bottles and cans doesn’t happen around your house... let us take it off your hands.</p>
+                <div class="service-highlight">
+                    <strong class="emoji">🌟</strong> <strong>What We Do:</strong> We pick up your dirty, recyclable cans right from your doorstep, no sorting or cleaning required! 
+                    We collect your returnables, handle all the recycling, and give 10% of every collection to a charity of our choice. The rest helps fund our college goals
+                </div>
+                <p>We make recycling easy and meaningful, one bag at a time. Every pickup helps the planet, our community, and a good cause.
+                It’s more than just cans, it’s doing good together.</p>
+            </div>
+        </section>
+
+        <section id="schedule" class="schedule-section">
+            <h2>📅 Schedule a Pickup</h2>
+            <p style="font-size: 1.1rem; margin: 1rem 0;">Click below to schedule a convenient pickup date! Cans will be picked up between 4pm and 6pm the day of your choosing!</p>
+            <a href="https://calendar.app.google/srq1ud13w7wy75yP7" class="schedule-btn">✨ Schedule Now</a>
+            <p style="margin-top: 1rem; font-size: 1 rem; opacity: 1.00;">Questions? Email us or reach out on Facebook!</p>
+        </section>
+
+        <section id="contact">
+            <h2>📞 Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="emoji">📧</span>
+                    <span><strong>Email:</strong></span>
+                    <a href="mailto:gotcansforus@gmail.com">gotcansforus@gmail.com</a>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="emoji">📱</span>
+                    <span><strong>Connect with us:</strong></span>
+                    <a href="https://facebook.com/gotcans" target="_blank" class="social-btn">
+                        Follow Us on Facebook
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p><span class="emoji">💖</span> Got Cans | It’s More Than Just Cans <span class="emoji">♻️</span></p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">© 2025 Got Cans - Together We Make a Difference!</p>
+    </footer>
+</body>
+</html>
